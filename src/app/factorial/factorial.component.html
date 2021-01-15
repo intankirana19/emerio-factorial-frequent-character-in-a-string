@@ -1,1 +1,5 @@
-<p>factorial works!</p>
+<h1>Factorial</h1>
+
+<input type="text" [formControl]= "number">
+<button (click)="count()">Get the Factorial!</button>
+<h3>The Factorial of {{ number.value }} is {{ factorial }}</h3>
