@@ -1,0 +1,38 @@
+// .container {
+//     background-color: #091a3a;
+//     color: #fff;
+//     margin: 0;
+// }
+
+$background-color:  #091a3a;
+:host {
+    display: block;
+}
+
+.container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+    background: $background-color;
+    text-align: center;
+    color: #fff;
+    padding: 3em;
+    // margin: 0;
+
+    .col-lg-8 {
+        padding: 0;
+    }
+
+}
+
+.header{
+    margin-bottom: 6rem;
+}
+
+
+.footer {
+    margin-top: 150px;
+}

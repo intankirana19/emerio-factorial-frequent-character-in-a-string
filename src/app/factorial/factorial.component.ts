@@ -11,10 +11,14 @@ export class FactorialComponent implements OnInit {
   number = new FormControl('');
   factorial: number;
   f: number;
+  isAnswer: boolean;
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit():void {
+    if ( this.number.value === '' ||  this.number.value === null ||  this.number.value === undefined) {
+      this.isAnswer = false;
+    }
   }
 
   count() {
@@ -24,6 +28,7 @@ export class FactorialComponent implements OnInit {
       f = f * i;
     }
     this.factorial = f;
+    this.isAnswer = true;
   }
 
 }

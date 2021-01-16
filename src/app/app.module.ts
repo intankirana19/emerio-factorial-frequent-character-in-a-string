@@ -7,13 +7,15 @@ import { FactorialComponent } from './factorial/factorial.component';
 import { AlphabetComponent } from './alphabet/alphabet.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { FirstComponent } from './first/first.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FactorialComponent,
     AlphabetComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    FirstComponent
   ],
   imports: [
     BrowserModule,

@@ -10,10 +10,14 @@ export class AlphabetComponent implements OnInit {
   
   str = new FormControl('');
   maxChar: string;
+  isChar: boolean;
 
   constructor() { }
 
   ngOnInit(): void {
+    if ( this.str.value === '' ||  this.str.value === null ||  this.str.value === undefined) {
+      this.isChar = false;
+    }
   }
 
   findCount() {
@@ -23,6 +27,7 @@ export class AlphabetComponent implements OnInit {
       if(this.str.value.split(char).length > max) {
           max = this.str.value.split(char).length;
           this.maxChar = char;
+          this.isChar = true;
         }
     });
   }

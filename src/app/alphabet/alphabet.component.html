@@ -1,5 +1,6 @@
-<h1>Most Frequent Character in a String</h1>
+<h3>Most Frequent Character in a String</h3>
 
-<input type="text" [formControl]= "str">
-<button (click)="findCount()">Who appears the most?</button>
-<h3>Character who appear the most is {{ maxChar }}</h3>
+<input type="text" [formControl]= "str"><br>
+<button class="btn btn-warning" type="submit" (click)="findCount()">Which appears the most?</button>
+<button class="btn btn-secondary" type="submit"  [routerLink]="['/first']">Back to First Page</button>
+<h4 *ngIf="isChar">Character who appear the most is {{ maxChar }}</h4>
